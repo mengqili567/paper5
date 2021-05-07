@@ -5,9 +5,9 @@ public class Point {
     {
         return Math.sqrt(Math.pow(p1.x-p2.x,2)+Math.pow(p1.y-p2.y,2));
     }
-    public Point shift(double lr, double ud)
+    public Point shift(double x, double y)
     {
-        return new Point(this.x+lr,this.y+ud);
+        return new Point(this.x+x,this.y+y);
     }
     public double getX() {
         return x;
@@ -30,7 +30,7 @@ public class Point {
         this.y = y;
     }
 
-    public static void main(String[] args) {
-        System.out.printf(Double.toString(getDistance(new Point(1,1),new Point(2,2))));
-    }
+    /*public static void main(String[] args) {
+        System.out.printf(Double.toString(getDistance(new Point(95.6115,210.8389),new Point(127.1814,180.8389))));
+    }*/
 }
